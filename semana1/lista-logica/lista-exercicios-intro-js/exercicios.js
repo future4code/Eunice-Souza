@@ -71,13 +71,19 @@ function retornaStringEmMaiuscula(string) {
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  const custo = 
-   valorIngresso = 
+  
+   return calculaIngressosEspetaculo
+   const custo = 3000
+   const valor = 100
+   return valorIngresso
+   console.log(3000/100)
+
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  // implemente sua lógica aqui
+ 
+ 
 
 }
 
