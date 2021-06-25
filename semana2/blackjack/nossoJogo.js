@@ -32,28 +32,13 @@ if(confirm("vamos iniciar uma nova jogada?")){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   if(somaCartaUsuario > somaComputador){
+      console.log("usuario ganha")
+   } else if(somaCartaUsuario < somaComputador){
+      console.log("computador ganha")
+   } else {
+      console.log("empate")
+   }
 
 
 }else{
