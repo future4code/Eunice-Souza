@@ -1,4 +1,4 @@
-function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
+ˋˋˋfunction calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
  if(CarrosVendidos === 0||valorDeVendas ===  100 + 5%)
  return 2000
 
