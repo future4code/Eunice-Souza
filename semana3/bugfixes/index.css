@@ -19,6 +19,11 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
 }
 
 button:focus {
@@ -26,7 +31,8 @@ button:focus {
 }
 
 img {
-    width: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 div>p:first-child {
@@ -34,8 +40,9 @@ div>p:first-child {
 }
 
 div img {
-    background: black;
+    background:none; 
 }
+
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -57,12 +64,14 @@ div img {
     height: 500px;
     text-align: center;
     position: relative;
-    top: 20px;
+    
 }
 
 .icone {
-    height: 15px;
+    height: 25px;
+    width:  25px ;
 }
+
 
 
 /** 
@@ -73,6 +82,7 @@ div img {
 
 #container-de-descricao {
     background-color: #2274a5;
+    padding-top: 90px;
     color: white;
 }
 
@@ -105,6 +115,8 @@ div:last-child {
 table {
     width: 60%;
     text-align: center;
+    margin: 0 auto;
+    
 }
 
 td button {
@@ -114,6 +126,7 @@ td button {
     border-radius: 5px;
     color: black;
     text-align: center;
+    
 }
 
 .container-do-search {
@@ -130,8 +143,27 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    display: block;
+    margin: 0 auto;
+    
+    
+    
 }
 
 #back-button:hover {
     background-color: #635a3d
+    
+    
+    
+}
+
+button:hover {
+    background-color: #c44f00;
+    color: blue;
+    
+    
+    
+}
+a {
+    text-decoration: none;
 }
