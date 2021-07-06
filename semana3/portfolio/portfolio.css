@@ -1,24 +1,16 @@
-div {
-    background-color: nane;
-}
-span{
-    background-color:black ;
-}
 div{
-    background-color: nane;
+    border-color: nane;
 }
-span{
-    background-color: black;
+
+h1{
+    color:blue;
+    margin: 60px;
+    padding: 30px;
 }
-div{
-    background-color: nane;
-}
-span{
-    background-color: black;
-}
-div{
-    background-color:nane;
-}
-span{
-    background-color: black
-}
+
+
+
+
+
+
+
