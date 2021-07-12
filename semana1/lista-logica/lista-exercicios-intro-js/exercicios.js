@@ -72,16 +72,15 @@ function retornaStringEmMaiuscula(string) {
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   
-   return calculaIngressosEspetaculo
-   const custo = 3000
-   const valor = 100
-   return valorIngresso
-   console.log(3000/100)
+   const quantidadesIngessos = custo / valorIngresso
+   return quantidadesIngessos
 
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
+  const tamnhoIgual = string1.length === string2.length
+  return tamnhoIgual
  
  
 
@@ -89,19 +88,33 @@ function checaStringsMesmoTamanho(string1, string2) {
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
+  const primeiroElemento = array[0]
+  return primeiroElemento
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+  const ultimoElemento = array.length - 1
+  return ultimoElemento
 
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
+  // const primeiroElemento = retornaPrimeiroElemento(array)
+  // const ultimoElemento = retornaUltimoElemento(array)
+  
+  // array[0] = ultimoElemento
+  // array[array.length - 1] = primeiroElemento
+  // return array
+  const primeiroElemento = retornaPrimeiroElemento(array)
+  const ultimoElemento = retornaUltimoElemento(array) 
+
+  array[0] = ultimoElemento
+  array[array.length - 1] = primeiroElemento
+return array
+
 
 }
 
