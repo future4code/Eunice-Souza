@@ -17,6 +17,10 @@
     margin-bottom: 15px;
 }
 
+.bigcard-container p{
+    min-width: 20px;
+}
+
 .bigcard-container > div {
     display: flex;
     flex-direction: column;

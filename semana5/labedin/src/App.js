@@ -3,13 +3,15 @@ import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 import eunice from "./components/eunice.jpg"
+import CardPequeno from './components/CardPequeno/CardPequeno';
 
 function App() {
   return (
     <div className="App">
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
-        <CardGrande 
+        <CardGrande
+
           imagem={eunice}
           nome="Eunice" 
           descricao="Oi, eu sou o Eunice. Sou aluna da Labenu. Sou Massoterapeuta em transição de carreira, escolhi a area da tecnologia  porque depois de muito proucurar uma profissão que me fizesse sentido, eu vi que na programação  da a oportunidade de evoluir meu lado profissional, e financeiro alem de ser uma profissão que não parar nos da muitas oportunidades de trabalho."
@@ -20,6 +22,13 @@ function App() {
           texto="Ver mais"
         />
       </div>
+      <div className="page-section-container">
+        <CardPequeno
+         
+          imagem={eunice}
+          nome="email: " 
+          descricao= "email@email.com"       />
+      </div>
 
       <div className="page-section-container">
         <h2>Experiências profissionais</h2>
@@ -29,11 +38,7 @@ function App() {
           descricao="Caixa, balconista, auxiliar de produção, Massoterapeuta!" 
         />
         
-        <CardGrande 
-          imagem="https://imagens.canaltech.com.br/empresas/4418.400.jpg" 
-          nome="NASA" 
-          descricao="Apontando defeitos." 
-        />
+        
       </div>
 
       <div className="page-section-container">
