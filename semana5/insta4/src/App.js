@@ -6,6 +6,7 @@ class App extends React.Component {
   render() {
     return (
       <div className={'app-container'}>
+
         <Post
           nomeUsuario={'paulinha'}
           fotoUsuario={'https://picsum.photos/50/50'}
@@ -22,6 +23,7 @@ class App extends React.Component {
           fotoPost={'https://picsum.photos/200/152'}
         />
       </div>
+
     );
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Post.css'
 
+
 import {IconeComContador} from '../IconeComContador/IconeComContador'
 
 import iconeCoracaoBranco from '../../img/favorite-white.svg'
@@ -29,6 +30,7 @@ class Post extends React.Component {
       curtido: !this.state.curtido,
       numeroCurtidas: novoNumeroCurtidas
     })
+
   }
 
   onClickComentario = () => {
@@ -68,6 +70,7 @@ class Post extends React.Component {
       <img className={'post-photo'} src={this.props.fotoPost} alt={'Imagem do post'}/>
 
       <div className={'post-footer'}>
+
         <IconeComContador
           icone={iconeCurtida}
           onClickIcone={this.onClickCurtida}
@@ -86,3 +89,4 @@ class Post extends React.Component {
 }
 
 export default Post
+
