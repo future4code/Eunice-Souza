@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+
 import './SecaoComentario.css'
 
 export class SecaoComentario extends Component {
@@ -23,5 +24,6 @@ export class SecaoComentario extends Component {
 			/>
 			<button onClick={this.props.aoEnviar}>Enviar</button>
 		</div>
+
 	}
 }
