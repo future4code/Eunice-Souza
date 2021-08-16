@@ -23,6 +23,5 @@ export class SecaoComentario extends Component {
 			/>
 			<button onClick={this.props.aoEnviar}>Enviar</button>
 		</div>
-
 	}
 }
