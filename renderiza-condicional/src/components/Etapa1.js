@@ -2,6 +2,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
+import styled from 'styled-components';
+
+
 
 
 class Etapa1 extends React.Component{
@@ -9,8 +12,7 @@ class Etapa1 extends React.Component{
         return(
         <div className="Etapa1">
           <h1>Etapa1</h1>
-          
-            
+                     
         </div>
         )
         

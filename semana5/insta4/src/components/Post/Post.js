@@ -1,7 +1,5 @@
 import React from 'react'
-
 import './Post.css'
-
 
 import {IconeComContador} from '../IconeComContador/IconeComContador'
 
@@ -31,7 +29,6 @@ class Post extends React.Component {
       curtido: !this.state.curtido,
       numeroCurtidas: novoNumeroCurtidas
     })
-
   }
 
   onClickComentario = () => {
