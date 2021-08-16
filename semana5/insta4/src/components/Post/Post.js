@@ -1,7 +1,6 @@
 import React from 'react'
 import './Post.css'
 
-
 import {IconeComContador} from '../IconeComContador/IconeComContador'
 
 import iconeCoracaoBranco from '../../img/favorite-white.svg'
@@ -66,6 +65,7 @@ class Post extends React.Component {
         <img className={'user-photo'} src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
         <p>{this.props.nomeUsuario}</p>
       </div>
+
 
       <img className={'post-photo'} src={this.props.fotoPost} alt={'Imagem do post'}/>
 
