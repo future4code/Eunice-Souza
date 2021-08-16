@@ -29,6 +29,7 @@ class Post extends React.Component {
       curtido: !this.state.curtido,
       numeroCurtidas: novoNumeroCurtidas
     })
+
   }
 
   onClickComentario = () => {
@@ -64,6 +65,7 @@ class Post extends React.Component {
         <img className={'user-photo'} src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
         <p>{this.props.nomeUsuario}</p>
       </div>
+
 
       <img className={'post-photo'} src={this.props.fotoPost} alt={'Imagem do post'}/>
 
