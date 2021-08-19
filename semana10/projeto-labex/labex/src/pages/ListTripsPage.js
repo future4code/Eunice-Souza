@@ -1,7 +1,8 @@
 import React from "react";
 
 
-function HomePage () {
+
+function ListTripsPage () {
 
     return(
         <div>
@@ -10,4 +11,4 @@ function HomePage () {
     )
 }
 
-export default HomePage;
+export default ListTripsPage;

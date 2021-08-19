@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function ListTripsPage () {
+export default AdminHomePage = () => {
 
     return(
         <div>
@@ -10,4 +10,4 @@ function ListTripsPage () {
     )
 }
 
-export default ListTripsPage;
+// export default AdminHomePage;
