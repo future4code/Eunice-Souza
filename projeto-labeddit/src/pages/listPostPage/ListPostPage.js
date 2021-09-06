@@ -5,14 +5,9 @@ import { useHistory } from "react-router";
 const ListPostPage = () => {
   const [post, setPost] = React.useState("");
   const [titulo, setTitulo] = React.useState("");
-  // const [totalPosts, setTotalPosts] = React.useState([]);
-  // const history = useHistory();
-  // const [itemcurtidas, setItemCurtidas] = React.useState([0]);
-  // const listCurtidas=curtidas.map(
-  //   (c) =>
-  //   <li>{c}</li>
-  // )
-  // const [totalCurtidas, setTotalCurtidas] = React.useState(0);
+
+//   const History = useHistory ({totalcurtidas})
+  const [totalCurtidas, setTotalCurtidas] = React.useState({});
 
   const pegaTextoPost = (event) => {
     const valorDigitado = event.target.value;
@@ -22,9 +17,6 @@ const ListPostPage = () => {
   const pegaTituloPost = (event) => {
     setTitulo(event.target.value);
   };
-
-  // const pegaItemPost = (event) =>
-  //   setItemCurtidas(event.targe.value);
 
   const PostUsuario = async (event) => {
     event.preventDefault();
@@ -78,7 +70,7 @@ const ListPostPage = () => {
     } catch (err) {
       response = null;
     } finally {
-      setCurtidas(response.data.curtidas);
+      setTotalCurtidas(response.data.value);
       return response;
     }
   };
@@ -89,12 +81,6 @@ const ListPostPage = () => {
 
   return (
     <div>
-      {/* <ul>{listaCurtidas}</ul>
-      {curtidas.map((curtidas) => {
-         return <p>{curtidas}</p>;
-      })} */}
-     
-   )
       <h1>ListPostPage</h1>
       <form onSubmit={PostUsuario}>
         <input
@@ -113,14 +99,9 @@ const ListPostPage = () => {
         />
         <button type="Submit">Postar</button>
       </form>
-
       <ul>
         <li>
-        {/* {listaCurtidas}
-        {curtidas.map((curtidas) => {
-         return <p>{curtidas}</p>;
-        })} */}
-          {/* {pegaItens.map((pegaItens) => (key = { item }))} */}
+          <curtidas/>
           <p>Nome do usuario</p>
           <p>Texto do usuario</p>
           <div>

@@ -18,7 +18,7 @@ const Router = () => {
                 <Route exct path='/Cadastro'>
                     <CadastroPage/>
                 </Route>
-                <Route exct path='/'>
+                <Route exct path='/ListPostPage'>
                     <ListPostPage/>
                 </Route>
                 <Route exct path='post/:PostId'>
