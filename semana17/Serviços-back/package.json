@@ -1,0 +1,36 @@
+{
+   "name": "aula-back-filtros",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start": "tsc && node ./build/index.js",
+      "dev": "tsnd --transpile-only --ignore-watch node_modules ./src/index.ts",
+      "build": "tsc",
+      "migrations": "tsnd ./src/data/migrations.ts"
+   },
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "@types/nodemailer": "^6.4.4",
+      "@types/nodemailer-direct-transport": "^1.0.32",
+      "axios": "^0.22.0",
+      "cors": "^2.8.5",
+      "dotenv": "^8.6.0",
+      "express": "^4.17.0",
+      "init": "^0.1.2",
+      "install": "^0.13.0",
+      "knex": "^0.21.21",
+      "mysql": "^2.18.1",
+      "nodemailer": "^6.6.5",
+      "npm": "^7.24.2"
+   },
+   "devDependencies": {
+      "@types/cors": "^2.8.12",
+      "@types/express": "^4.17.0",
+      "@types/knex": "^0.16.1",
+      "@types/node": "^13.13.52",
+      "ts-node-dev": "^1.1.8",
+      "typescript": "^3.9.10"
+   }
+}
