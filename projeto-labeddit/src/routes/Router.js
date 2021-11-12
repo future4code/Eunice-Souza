@@ -12,19 +12,19 @@ const Router = () => {
         <BrowserRouter>
             <Header/>
             <Switch>
-                <Route exct path='/Login'>
+                <Route exct path='/login'>
                     <LoginPage/>
                 </Route>
-                <Route exct path='/Cadastro'>
+                <Route exct path='/cadastro'>
                     <CadastroPage/>
                 </Route>
-                <Route exct path='/ListPostPage'>
+                <Route exct path='/listPostPage'>
                     <ListPostPage/>
                 </Route>
                 <Route exct path='post/:PostId'>
                     <PostPage/>
                 </Route>
-                <Route exct path='/Error'>
+                <Route exct path='/error'>
                     <ErrorPage/>
                 </Route>
             </Switch>
