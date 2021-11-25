@@ -1,8 +1,10 @@
 import express from 'express'
 import knex from 'knex'
 import dotenv from 'dotenv'
-import createUsers from './endpoints/createUsers'
-import getUsersByld from './endpoints/getUsersByld'
+import createUsers from './data/endpoints/createUsers'
+import getUsersByld from './data/endpoints/getUsersByld'
+import editUsers from './data/endpoints/editUsres'
+
 
 dotenv.config()
 
@@ -15,7 +17,7 @@ const connection = knex({
         database: process.env.DB_Name,
         port: 3303
     }  
-s
+
 })
 
 const app = express()
@@ -23,7 +25,7 @@ app.use(express.json())
 
 app.put('/users', createUsers)
 app.get('/user/:id',getUsersByld)
-app.post('/user/edit/:id', editUser)
+app.post('/user/edit/:id', editUsers)
 
 app.listen(3003, ()=>{
     console.log('Servidor rodando na porta 3003')

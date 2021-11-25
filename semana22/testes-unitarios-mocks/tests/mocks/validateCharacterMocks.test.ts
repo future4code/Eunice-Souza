@@ -1,9 +1,6 @@
 import { Character } from "../../src/validateCharacter"
 
-const  validateCharacterMoncks = jest.fn(() => {
-    return true
-})
+test  ('validateCharacterMoncks' = jest.fn ())
+
  
-const attacker: Character ={
-    name: 'tempestade'
-}
+
