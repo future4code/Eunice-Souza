@@ -1,11 +1,17 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {Hero} from './components/Hero/Hero';
+import './App.css'
 
-function App() {
+const App = () => {
   return (
-    
-  <div>Icasei</div>
+    <div className="App">
+     <Hero/>
+    </div>
   );
-}
+};
 
 export default App;
+
+// const App = () => <Router/>;
+
+// export default App;

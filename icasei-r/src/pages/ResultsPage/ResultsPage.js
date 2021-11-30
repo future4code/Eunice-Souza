@@ -8,9 +8,15 @@ const ResultsPage = () => {
 
   const history = useHistory()
 
-  const goResultsNotFoundPage = () => {
+  const goResults =() => {
     history.push("/resultsNotFound")
   }
+
+  const somaCurtidas =() => {
+      setPegaTotalCurtidas(pegaCurtidas + 1)
+  }
+
+  
 
   const url =
     "https://www.googleapis.com/youtube/v3/search?part=id,snippet&q=%7Btermo_de_busca%7D&key=%7BAPI_KEY%7D";
@@ -26,20 +32,24 @@ const ResultsPage = () => {
     // axios
     //   .get(url)
     //   .then((response) => {})
-    //   .catch((error) => console.log(error));
+    //   .catch((error) => console.log(error))
   }
 
-  // React.useEffect(() => {
-  //   totalCurtidas()
+  React.useEffect(() => {
+    totalCurtidas()
     
-  // }, [])
+  }, [])
+
+ 
+
+
 
   return (
     <div>
       <p>ResultsPage</p>
       <form onSubmit={ResultsPage}>
         <input
-          name="Curtida"
+          name="Buscar"
           required
           onChange={totalCurtidas}
           type="text"
@@ -48,8 +58,8 @@ const ResultsPage = () => {
       </form>
       <ul>
         <div>
-          <button onClick={"Gostei"}>Gostei</button>
-          <span> {totalCurtidas} </span>
+          <button onClick={"goResultsNotFond"}>Gostei</button>
+          <span> {somaCurtidas} </span>
           <button onClick={"Não gostei"}>Não gostei</button>
         </div>
       </ul>

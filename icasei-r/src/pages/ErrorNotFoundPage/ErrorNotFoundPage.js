@@ -1,16 +1,19 @@
 import React from "react"
+import { useHistory } from "react-router-dom";
 
 
 
-const ResultsNotFoundPage = () => {
+
+const ErrorNotFoundPage = () => {
   const [inputValues, setInputValues] = React.useState({
 
   });
 
   const history = useHistory()
 
-  const goResults = () => {
-    history.push("/results")
+  const goErrorNotFoundPage  = () => {
+    history.push("/Datails")
+    console.log(history)
   }
 
   const handleInput = (event) => {
@@ -24,14 +27,14 @@ const ResultsNotFoundPage = () => {
 
     return (
     <div>
-        <p>ResultsNotFoundPage</p>
-      <form onSubmit={ResultsNotFoundPage}>
+        <p>ErrorNotFoundPage</p>
+      <form onSubmit={ErrorNotFoundPage}>
         <input
           name="Curtida"
           required
           onChange={"Termo de busca"}
           type="text"
-          placeholder="Busca não encontrada"
+          placeholder="Pagina não encontrada"
         />
       </form>
       <ul>
@@ -45,6 +48,6 @@ const ResultsNotFoundPage = () => {
   );
 };
 
-export default ResultsNotFoundPage;
+export default ErrorNotFoundPage
 
  
