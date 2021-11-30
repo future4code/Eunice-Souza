@@ -1,6 +1,20 @@
 import React from "react"
+// import {Box, Button, Zoom, Grid} from "@material-ui/core"
 import { useHistory } from "react-router-dom"
-// import styled from "styled-components"
+// import { goToMyVideo } from "../../routes/coodinator"
+// import FilmeCard from "../../components/FilmeCard/FilmeCard"
+// import Header from "../../components/Header/Header"
+// import { CircularProgress } from "@material-ui/core/CircularProgress"
+// import Pagination from "@material-ui/lab/Pagination"
+// import GlobalContext from "../../global/GlobalContex"
+// import { useContext } from "react"
+
+// const FilmeListItemPage =() => {
+//     const history = useHistory()
+//     const {state, setters} = useContex(GlobalContext)
+
+
+// }
 
 const HomePage = () => {
   const [inputValues, setInputValues] = React.useState({

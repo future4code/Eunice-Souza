@@ -25,13 +25,12 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-const Header = () => {
+const Header = (props) => {
     const classes = useStyles()
 
     return (
-
-        <div >
-            <AppBar className={'classes.root'}>
+        <>
+            <AppBar className={classes.root}>
                 <Toolbar>
                     <Box className={props.display === "space" ? classes.header100 : classes.header50}>
                         {props.Button1}
@@ -44,8 +43,7 @@ const Header = () => {
                     </Box>
                 </Toolbar>
             </AppBar>
-        <div/>
-        
+        </>
     )
 }
 export default Header

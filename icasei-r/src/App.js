@@ -1,16 +1,13 @@
 import { CssBaseline } from "@material-ui/core";
-import React from "react";
-import GlobalStateContext from './global/GobalStateContext'
-import Router from "./Routes/Router";
+// import GlobalStateContext from "./global/GobalStateContext";
+import Router from "./routes/Router";
 
 const App = () => {
   return (
-    
-    <GlobalStateContext>
-      <CssBaseline/>
+    <div>
+      <CssBaseline />
       <Router />
-    </GlobalStateContext>
-   
+    </div>
   );
 };
 
