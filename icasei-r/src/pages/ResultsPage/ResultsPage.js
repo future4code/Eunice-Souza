@@ -8,8 +8,8 @@ const ResultsPage = () => {
 
   const history = useHistory();
 
-  const goResults = () => {
-    history.push("/resultsNotFound");
+  const goResultsNotFond = () => {
+    history.push("/NotFound");
   };
 
   const somaCurtidas = () => {
@@ -40,7 +40,6 @@ const ResultsPage = () => {
 
   return (
     <div>
-      <p>ResultsPage</p>
       <form onSubmit={ResultsPage}>
         <input
           name="Buscar"
@@ -52,13 +51,14 @@ const ResultsPage = () => {
       </form>
       <ul>
         <div>
-          <button onClick={"goResultsNotFond"}>Gostei</button>
-          <span> {somaCurtidas} </span>
-          <button onClick={"Não gostei"}>Não gostei</button>
+          <button onClick={() => history.push("/details")}>Gostei</button>
+            <span> {somaCurtidas} </span>
+          <button onClick={() => history.push("/error")}>Não Gostei</button>
+          <button onClick={() => history.push("/")}>Voltar</button>
         </div>
       </ul>
     </div>
-  );
-};
+  )
+}
 
 export default ResultsPage;

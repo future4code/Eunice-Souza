@@ -23,9 +23,9 @@ const HomePage = () => {
 
   const history = useHistory()
 
-  const goResults = () => {
-    history.push("/results")
-  }
+  // const goResults = () => {
+  //   history.push("/results")
+  // }
 
   const handleInput = (event) => {
     const { name, value } = event.target;
@@ -45,10 +45,10 @@ const HomePage = () => {
           type="text"
           placeholder="Pesquisar"
         />
-
-        <button type="submit" onClick={goResults}>
-          Buscar
-        </button>
+             <button onClick={() => history.push("/results")}>Buscar</button>
+        {/* <button type="submit" onClick={goResults}> */}
+          {/* Buscar */}
+        {/* </button> */}
       </form>
     </div>
   );
