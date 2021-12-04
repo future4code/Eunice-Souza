@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react"
+import React from "react"
 import axios from "axios"
 
 export const useRequestData = (initValue, url) => {
-    const [data, setData] = useState(initValue)
+    const [data, setData] = React.useState(initValue)
 
-    useEffect(() => {
+    React.useEffect(() => {
         axios.get(url)
             .then((res) => {
                 setData(res.data)

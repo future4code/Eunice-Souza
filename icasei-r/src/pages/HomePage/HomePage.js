@@ -1,6 +1,6 @@
 import React from "react"
-// import {Box, Button, Zoom, Grid} from "@material-ui/core"
 import { useHistory } from "react-router-dom"
+
 // import { goToMyVideo } from "../../routes/coodinator"
 // import FilmeCard from "../../components/FilmeCard/FilmeCard"
 // import Header from "../../components/Header/Header"
@@ -13,7 +13,6 @@ import { useHistory } from "react-router-dom"
 //     const history = useHistory()
 //     const {state, setters} = useContex(GlobalContext)
 
-
 // }
 
 const HomePage = () => {
@@ -23,12 +22,8 @@ const HomePage = () => {
 
   const history = useHistory()
 
-  // const goResults = () => {
-  //   history.push("/results")
-  // }
-
   const handleInput = (event) => {
-    const { name, value } = event.target;
+    const { name, value } = event.target
     setInputValues({
       ...inputValues,
       [name]: value
@@ -45,13 +40,13 @@ const HomePage = () => {
           type="text"
           placeholder="Pesquisar"
         />
-             <button onClick={() => history.push("/results")}>Buscar</button>
+        <button onClick={() => history.push("/results")}>Buscar</button>
         {/* <button type="submit" onClick={goResults}> */}
-          {/* Buscar */}
+        {/* Buscar */}
         {/* </button> */}
       </form>
     </div>
-  );
-};
+  )
+}
 
 export default HomePage
