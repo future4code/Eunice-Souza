@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useHistory } from "react-router-dom";
 
@@ -8,14 +9,9 @@ const ResultsPage = () => {
 
   const history = useHistory();
 
-  
-
   const somaCurtidas = () => {
     setPegaTotalCurtidas(pegaCurtidas + 1);
   };
-
-  // const url =
-  //   "https://www.googleapis.com/youtube/v3/search?part=id,snippet&q=%7Btermo_de_busca%7D&key=%7BAPI_KEY%7D"
 
   const totalCurtidas = async () => {
     const res = await fetch(
@@ -26,10 +22,12 @@ const ResultsPage = () => {
     setPegaTotalCurtidas(data.next);
     console.log(data);
 
-    // axios
-    //   .get(url)
-    //   .then((response) => {})
-    //   .catch((error) => console.log(error))
+    axios
+      .get(
+        "https://www.googleapis.com/youtube/v3/search?part=id,snippet&q={termo_de_busca}&key={API_KEY}"
+      )
+      .then((response) => {})
+      .catch((error) => console.log(error));
   };
 
   React.useEffect(() => {
@@ -43,30 +41,15 @@ const ResultsPage = () => {
           name="Buscar"
           required
           onChange={totalCurtidas}
-          type="text"
+          type="video"
           placeholder="Nome do filme"
         />
+
+        <button onClick={() => history.push("/results")}>Buscar</button>
       </form>
 
       <ul>
-      {/* {List.map((item) => (
-            <li key={item.id}>
-              <a href={item.url}>{item.curtidas}</a>
-            </li>
-          ))} */}
         <div>
-          
-
-            {/* {List.map(item =>(
-              <li key={item.id}>
-                <a href={item.url}>{item.curtidas}</a>
-                <button onClick={() => history.push("/error")}>Não Gostei</button>
-              </li>
-            ))} */}
-           
-
-
-
           <button color={"primary"} onClick={() => history.push("/details")}>
             Gostei
           </button>
