@@ -19,13 +19,13 @@ const HomePage = () => {
   return (
     <div>
       <form onSubmit={HomePage}>
-        <input
+         <input
           name="Pesquisar"
           required
           onChange={handleInput}
           type="video"
-          placeholder="Pesquisar"
-        />
+          placeholder="Pesquisar por vídeos"
+        /> 
         <button onClick={() => history.push("/results")}>Buscar</button>
       </form>
     </div>

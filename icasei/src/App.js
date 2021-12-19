@@ -1,17 +1,12 @@
-import React from 'react'
-import {Hero} from './components/Hero/Hero';
-import './App.css'
+// import React from "react";
+import "./App.scss";
 
-const App = () => {
+function App() {
   return (
-    <div className="App">
-     <Hero/>
+    <div>
+     App
     </div>
-  );
-};
+  )
+}
 
 export default App;
-
-// const App = () => <Router/>;
-
-// export default App;

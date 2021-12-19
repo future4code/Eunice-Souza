@@ -1,6 +1,6 @@
-import axios from "axios";
-import React from "react";
-import { useHistory } from "react-router-dom";
+import React from "react"
+import axios from "axios"
+import { useHistory } from "react-router-dom"
 
 const ResultsPage = () => {
   const [pegaCurtidas, setPegaTotalCurtidas] = React.useState({
