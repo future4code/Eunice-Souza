@@ -1,14 +1,23 @@
+const User = require(../../models /User)
+
 const UserController = {
 
     async createUser(req, res) {
 
-        const body =req.body
+        const bodyData = req.body
 
-            try{}catch(error) {
-                return res.status(400).json(error)
-            }
-       
-        
-    
+        try {
+
+            const newUser = await User.create(bodyData)
+
+        } catch (error) {
+
+
+            return res.status(400).json(error)
+        }
+
+
+
     }
 }
+export default UserController
