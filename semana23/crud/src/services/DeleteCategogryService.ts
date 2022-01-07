@@ -13,5 +13,4 @@ export class DeleteCategoryService {
         await repo.delete(id)
     }
 
-
 }

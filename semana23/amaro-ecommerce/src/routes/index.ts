@@ -1,17 +1,17 @@
-// import UserController from "../controllers/UserController"
+import { UserController } from "../controllers/UserController"
+import { Router } from "express"
+// const {Router} = require("express")
 
-const {Router} = require("express")
-
-const UserControllers = require(../../controllers/UserController)
+// const UserController = require(../../controllers/UserController)
 
 const routes = Router()
 
-routes.get("/", (req, res) =>{
-    res.send()
-})
+// routes.get("/", (req: Request, res:Response) =>{
+//     res.send()
+// })
 
 routes.post("/users")
-routes.get("/users")
+routes.get("/users",  UserController)
 
 routes.get("/users/:users_id")
 routes.post("/login")
@@ -30,7 +30,7 @@ routes.get("/cart/:user_id")
 routes.get("/cart/:user_id/:cart_id")
 
 
-export default routes
+export {routes} 
 
 
 

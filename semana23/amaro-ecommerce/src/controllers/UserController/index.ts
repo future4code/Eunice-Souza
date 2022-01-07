@@ -1,8 +1,10 @@
-const User = require(../../models /User)
+import User from "../../models/User"
 
-const UserController = {
+// const User = require(../../models /User)
 
-    async createUser(req, res) {
+export class UserController {
+
+    async createUser(req: Request, res: Response) {
 
         const bodyData = req.body
 
@@ -16,8 +18,8 @@ const UserController = {
             return res.status(400).json(error)
         }
 
-
+        return res.json(error)
+        
 
     }
 }
-export default UserController
